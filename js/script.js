@@ -42,9 +42,9 @@ const ourTeam = [memberWayne, memberAngela, memberWalter, memberAngelaLopez, mem
 
 // loop per stampare le info in console
 for (let index = 0; index < ourTeam.length; index++) {
-    console.log(ourTeam[index].nome);
-    console.log(ourTeam[index].ruolo);
-    console.log(ourTeam[index].foto);
+    console.log('Nome:', ourTeam[index].nome);
+    console.log('Ruolo:', ourTeam[index].ruolo);
+    console.log('Foto:', ourTeam[index].foto);
     console.log('-----------------');
 }
 
