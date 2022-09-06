@@ -54,6 +54,7 @@ for (index = 0; index < ourTeam.length; index++) {
     appendName();
     appendRole();
     appendPicture()
+
     // funzione per stampare NOME
     function appendName() {
         const infoContainer = document.createElement('p');
@@ -72,6 +73,7 @@ for (index = 0; index < ourTeam.length; index++) {
     // funzione per appendere l'immagine
     function appendPicture() {
         const pictureContainer = document.createElement('img');
+        pictureContainer.className = 'profile-pic';
         memberContainer.append(pictureContainer);
         pictureContainer.setAttribute('src', 'img/' + ourTeam[index].foto);
     }
