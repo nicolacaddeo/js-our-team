@@ -1,10 +1,5 @@
-/*
-MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringhe
-*/
+// variabili
 const cardsContainer = document.getElementById('cards-container');
-
-
 
 // oggetti - team
 const memberWayne = {
@@ -38,6 +33,7 @@ const memberBarbara = {
     foto: 'barbara-ramos-graphic-designer.jpg'
 };
 
+// array di oggetti
 const ourTeam = [memberWayne, memberAngela, memberWalter, memberAngelaLopez, memberScott, memberBarbara];
 
 // loop per stampare le info in console
@@ -49,6 +45,7 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log('-----------------');
 }
 
+// loop per stampare le info in pagina
 for (index = 0; index < ourTeam.length; index++) {
     const memberContainer = document.createElement('div');
     memberContainer.className = 'col-12';
@@ -72,6 +69,9 @@ for (index = 0; index < ourTeam.length; index++) {
         memberContainer.append(infoContainer);
     }
 }
+
+
+
 
 
 
