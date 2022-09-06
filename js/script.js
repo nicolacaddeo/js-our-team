@@ -41,4 +41,12 @@ const memberBarbara = {
     foto: 'barbara-ramos-graphic-designer.jpg'
 };
 
-
+const ourTeam =
+    [
+        memberWayne,
+        memberAngela,
+        memberWalter,
+        memberAngelaLopez,
+        memberScott,
+        memberBarbara
+    ];
