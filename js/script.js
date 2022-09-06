@@ -53,7 +53,7 @@ for (index = 0; index < ourTeam.length; index++) {
     cardsContainer.append(memberContainer);
     appendName();
     appendRole();
-
+    appendPicture()
     // funzione per stampare NOME
     function appendName() {
         const infoContainer = document.createElement('p');
@@ -67,6 +67,13 @@ for (index = 0; index < ourTeam.length; index++) {
         const infoContainer = document.createElement('p');
         infoContainer.append('Ruolo:' + ' ' + ourTeam[index].ruolo);
         memberContainer.append(infoContainer);
+    }
+
+    // funzione per appendere l'immagine
+    function appendPicture() {
+        const pictureContainer = document.createElement('img');
+        memberContainer.append(pictureContainer);
+        pictureContainer.setAttribute('src', 'img/' + ourTeam[index].foto);
     }
 }
 
