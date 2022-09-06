@@ -53,7 +53,7 @@ for (index = 0; index < ourTeam.length; index++) {
     cardsContainer.append(memberContainer);
     appendName();
     appendRole();
-    appendPicture()
+    appendPicture();
 
     // funzione per stampare NOME
     function appendName() {
