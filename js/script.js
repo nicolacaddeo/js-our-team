@@ -1,7 +1,4 @@
 /*
-MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
-
 MILESTONE 1:
 Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
@@ -41,12 +38,13 @@ const memberBarbara = {
     foto: 'barbara-ramos-graphic-designer.jpg'
 };
 
-const ourTeam =
-    [
-        memberWayne,
-        memberAngela,
-        memberWalter,
-        memberAngelaLopez,
-        memberScott,
-        memberBarbara
-    ];
+const ourTeam = [memberWayne, memberAngela, memberWalter, memberAngelaLopez, memberScott, memberBarbara];
+
+// loop per stampare le info in console
+for (let index = 0; index < ourTeam.length; index++) {
+    console.log(ourTeam[index].nome);
+    console.log(ourTeam[index].ruolo);
+    console.log(ourTeam[index].foto);
+    console.log('-----------------');
+}
+
