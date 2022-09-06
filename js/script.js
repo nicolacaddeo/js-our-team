@@ -1,10 +1,10 @@
 /*
-MILESTONE 1:
-Stampare su console le informazioni di nome, ruolo e la stringa della foto
-
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
+const cardsContainer = document.getElementById('cards-container');
+
+
 
 // oggetti - team
 const memberWayne = {
@@ -41,12 +41,38 @@ const memberBarbara = {
 const ourTeam = [memberWayne, memberAngela, memberWalter, memberAngelaLopez, memberScott, memberBarbara];
 
 // loop per stampare le info in console
-for (let index = 0; index < ourTeam.length; index++) {
-    console.log('Membro del team numero', index + 1);
-    console.log('Nome:', ourTeam[index].nome);
-    console.log('Ruolo:', ourTeam[index].ruolo);
-    console.log('Foto:', ourTeam[index].foto);
+for (let i = 0; i < ourTeam.length; i++) {
+    console.log('Membro del team numero', i + 1);
+    console.log('Nome:', ourTeam[i].nome);
+    console.log('Ruolo:', ourTeam[i].ruolo);
+    console.log('Foto:', ourTeam[i].foto);
     console.log('-----------------');
 }
+
+for (index = 0; index < ourTeam.length; index++) {
+    const memberContainer = document.createElement('div');
+    memberContainer.className = 'col-12';
+    memberContainer.classList.add('nc-container');
+    cardsContainer.append(memberContainer);
+    appendName();
+    appendRole();
+
+    // funzione per stampare NOME
+    function appendName() {
+        const infoContainer = document.createElement('p');
+        infoContainer.append('Nome:' + ' ' + ourTeam[index].nome);
+        memberContainer.append(infoContainer);
+
+    }
+
+    // funzione per stampare RUOLO
+    function appendRole() {
+        const infoContainer = document.createElement('p');
+        infoContainer.append('Ruolo:' + ' ' + ourTeam[index].ruolo);
+        memberContainer.append(infoContainer);
+    }
+}
+
+
 
 
